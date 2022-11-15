@@ -17,23 +17,31 @@ namespace kallulater_shond
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string text = "";
 
-            var num1 = Convert.ToDouble(textBox1.Text);
-            var num2 = Convert.ToDouble(textBox2.Text);
+            try
+            {
+                string text = "";
+                var num1 = Convert.ToDouble(textBox1.Text);
+                var num2 = Convert.ToDouble(textBox2.Text);
+                var answer = num1 + num2;
 
-            var answer = num1 + num2;
+                text = Convert.ToString(answer);
 
-            text = Convert.ToString(answer);
+                textBox3.Text = text;
 
-            textBox3.Text = text;
-
-            label4.Text = "+";
-            label4.Visible = true;
+                label4.Text = "+";
+                label4.Visible = true;
+            }
+            catch
+            {
+                MessageBox.Show("Эй, ГУМАНИТАРИЙ хварит ламать меня. Бука", "Code 1.0", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            try
+            {
                 string text = "";
 
                 var num1 = Convert.ToDouble(textBox1.Text);
@@ -47,10 +55,17 @@ namespace kallulater_shond
 
                 label4.Text = "-";
                 label4.Visible = true;
+            }
+            catch
+            {
+                MessageBox.Show("Эй, ГУМАНИТАРИЙ хварит ламать меня. Бука", "Code 1.0", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
+            try
+            {
                 string text = "";
                 double answer;
                 var num1 = Convert.ToDouble(textBox1.Text);
@@ -64,20 +79,37 @@ namespace kallulater_shond
 
                 label4.Text = "/";
                 label4.Visible = true;
+            }
+            catch
+            {
+                MessageBox.Show("Эй, ГУМАНИТАРИЙ хварит ламать меня. Бука", "Code 1.0", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-             string text = "";
+            try
+            {
+                string text = "";
 
-            var num1 = Convert.ToDouble(textBox1.Text);
-            var num2 = Convert.ToDouble(textBox2.Text);
-            var answer = num1 * num2;
-            text = Convert.ToString(answer);
-            textBox3.Text = text;
+                var num1 = Convert.ToDouble(textBox1.Text);
+                var num2 = Convert.ToDouble(textBox2.Text);
+                var answer = num1 * num2;
+                text = Convert.ToString(answer);
+                textBox3.Text = text;
 
-            label4.Text = "*";
-            label4.Visible = true;
+                label4.Text = "*";
+                label4.Visible = true;
+            }
+            catch
+            {
+                MessageBox.Show("Эй, ГУМАНИТАРИЙ хварит ламать меня. Бука", "Code 1.0", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

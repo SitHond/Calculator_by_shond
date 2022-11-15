@@ -45,14 +45,15 @@ namespace kallulater_shond
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(85, 78);
+            this.textBox1.Location = new System.Drawing.Point(12, 81);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 0;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(213, 78);
+            this.textBox2.Location = new System.Drawing.Point(136, 81);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 1;
@@ -60,7 +61,7 @@ namespace kallulater_shond
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(106, 62);
+            this.label1.Location = new System.Drawing.Point(28, 65);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(48, 13);
             this.label1.TabIndex = 2;
@@ -69,7 +70,7 @@ namespace kallulater_shond
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(233, 62);
+            this.label2.Location = new System.Drawing.Point(163, 65);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(48, 13);
             this.label2.TabIndex = 3;
@@ -78,7 +79,7 @@ namespace kallulater_shond
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(373, 62);
+            this.label3.Location = new System.Drawing.Point(293, 65);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(37, 13);
             this.label3.TabIndex = 4;
@@ -86,7 +87,7 @@ namespace kallulater_shond
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(338, 78);
+            this.textBox3.Location = new System.Drawing.Point(261, 81);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 5;
@@ -105,7 +106,7 @@ namespace kallulater_shond
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label4.Location = new System.Drawing.Point(191, 78);
+            this.label4.Location = new System.Drawing.Point(91, 81);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(51, 20);
             this.label4.TabIndex = 7;
@@ -115,7 +116,7 @@ namespace kallulater_shond
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(319, 81);
+            this.label5.Location = new System.Drawing.Point(242, 86);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(13, 13);
             this.label5.TabIndex = 8;
