@@ -11,9 +11,7 @@ namespace kallulater_shond
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
+        {}
 
         public void button1_Click(object sender, EventArgs e)
         {
@@ -33,7 +31,7 @@ namespace kallulater_shond
             }
             catch
             {
-                MessageBox.Show("Эй, ГУМАНИТАРИЙ хварит ламать меня. Бука", "Code 1.0", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Эй, ГУМАНИТАРИЙ хватет ламать меня. Бука", "Code 1.0", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -57,7 +55,7 @@ namespace kallulater_shond
             }
             catch
             {
-                MessageBox.Show("Эй, ГУМАНИТАРИЙ хварит ламать меня. Бука", "Code 1.0", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Эй, ГУМАНИТАРИЙ хватет ламать меня. Бука", "Code 1.0", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -102,14 +100,12 @@ namespace kallulater_shond
             }
             catch
             {
-                MessageBox.Show("Эй, ГУМАНИТАРИЙ хварит ламать меня. Бука", "Code 1.0", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Эй, ГУМАНИТАРИЙ хватет ламать меня. Бука", "Code 1.0", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        {}
 
         private void button5_Click(object sender, EventArgs e)
         {
@@ -130,7 +126,7 @@ namespace kallulater_shond
             }
             catch
             {
-                MessageBox.Show("Эй, ГУМАНИТАРИЙ хварит ламать меня. Бука", "Code 1.0", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Эй, ГУМАНИТАРИЙ хватет ламать меня. Бука", "Code 1.0", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
