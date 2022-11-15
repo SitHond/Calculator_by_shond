@@ -15,9 +15,8 @@ namespace kallulater_shond
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        public void button1_Click(object sender, EventArgs e)
         {
-
             try
             {
                 string text = "";
@@ -110,6 +109,29 @@ namespace kallulater_shond
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string text = "";
+
+                var num1 = Convert.ToDouble(textBox1.Text);
+                var num2 = Convert.ToDouble(textBox2.Text);
+
+                double answer = Math.Pow(num1, num2);
+                text = Convert.ToString(answer);
+
+                textBox3.Text = text;
+
+                label4.Text = "^";
+                label4.Visible = true;
+            }
+            catch
+            {
+                MessageBox.Show("Эй, ГУМАНИТАРИЙ хварит ламать меня. Бука", "Code 1.0", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
