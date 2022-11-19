@@ -16,22 +16,22 @@ namespace kallulater_shond
         {}
         public void button1_Click(object sender, EventArgs e)
         {            
-            textBox3.Text = Math.math_p(textBox1.Text, textBox2.Text);
+            textBox3.Text = Math.math_plas(textBox1.Text, textBox2.Text);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            textBox3.Text = Math.math_m(textBox1.Text, textBox2.Text);
+            textBox3.Text = Math.math_minus(textBox1.Text, textBox2.Text);
         }
 
         public void button3_Click(object sender, EventArgs e)
         {
-            textBox3.Text = Math.math_d(textBox1.Text, textBox2.Text);
+            textBox3.Text = Math.math_division(textBox1.Text, textBox2.Text);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            textBox3.Text = Math.math_u(textBox1.Text, textBox2.Text);
+            textBox3.Text = Math.math_multiply(textBox1.Text, textBox2.Text);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -62,6 +62,11 @@ namespace kallulater_shond
             {
                 MessageBox.Show("Эй, ГУМАНИТАРИЙ хватет ламать меня. Бука", "Code 1.0", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            textBox3.Text = Math.math_s(textBox1.Text, textBox2.Text);
         }
     }
 }

@@ -42,6 +42,7 @@ namespace kallulater_shond
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -90,16 +91,18 @@ namespace kallulater_shond
             // 
             this.textBox3.Location = new System.Drawing.Point(261, 81);
             this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(100, 20);
             this.textBox3.TabIndex = 5;
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
             this.button1.Location = new System.Drawing.Point(12, 128);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 50);
+            this.button1.Size = new System.Drawing.Size(50, 50);
             this.button1.TabIndex = 6;
-            this.button1.Text = "Сложить";
+            this.button1.Text = "+";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -125,31 +128,34 @@ namespace kallulater_shond
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(109, 128);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.button2.Location = new System.Drawing.Point(68, 128);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(80, 50);
+            this.button2.Size = new System.Drawing.Size(50, 50);
             this.button2.TabIndex = 9;
-            this.button2.Text = "Вычесть";
+            this.button2.Text = "-";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(201, 128);
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.button3.Location = new System.Drawing.Point(124, 128);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(80, 50);
+            this.button3.Size = new System.Drawing.Size(50, 50);
             this.button3.TabIndex = 10;
-            this.button3.Text = "Разделить";
+            this.button3.Text = "÷";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(296, 128);
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.button4.Location = new System.Drawing.Point(180, 128);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(80, 50);
+            this.button4.Size = new System.Drawing.Size(50, 50);
             this.button4.TabIndex = 11;
-            this.button4.Text = "Умножить";
+            this.button4.Text = "×";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -157,17 +163,29 @@ namespace kallulater_shond
             // 
             this.button5.Location = new System.Drawing.Point(12, 184);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(80, 50);
+            this.button5.Size = new System.Drawing.Size(50, 50);
             this.button5.TabIndex = 12;
-            this.button5.Text = "Степень";
+            this.button5.Text = "В разработке";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F);
+            this.button6.Location = new System.Drawing.Point(68, 184);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(50, 50);
+            this.button6.TabIndex = 13;
+            this.button6.Text = "%";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -204,6 +222,7 @@ namespace kallulater_shond
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }
 
