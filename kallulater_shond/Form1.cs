@@ -9,7 +9,10 @@ namespace kallulater_shond
 
         public form1()
         {
-            InitializeComponent();           
+            InitializeComponent();
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink; // Запрет на изменения размера формы
+            MaximizeBox = false;
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -66,7 +69,22 @@ namespace kallulater_shond
 
         private void button6_Click(object sender, EventArgs e)
         {
-            textBox3.Text = Math.math_s(textBox1.Text, textBox2.Text);
+            textBox3.Text = Math.math_percent(textBox1.Text, textBox2.Text);
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace kallulater_shond
@@ -57,7 +53,7 @@ namespace kallulater_shond
             }
             return string.Empty;
         }
-        public static string math_s(string r, string t)
+        public static string math_percent(string r, string t)
         {
             try
             {
