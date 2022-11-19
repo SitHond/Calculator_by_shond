@@ -1,7 +1,7 @@
 ﻿
 namespace kallulater_shond
 {
-    partial class Form1
+    partial class form1
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -163,7 +163,7 @@ namespace kallulater_shond
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // Form1
+            // form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -181,8 +181,8 @@ namespace kallulater_shond
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "form1";
+            this.Text = "Калькулятор";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

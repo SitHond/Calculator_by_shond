@@ -4,72 +4,38 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace kallulater_shond
 {
-    public partial class Form1 : Form
+    public partial class form1 : Form
     {
-        public Form1()
+
+        public form1()
         {
-            InitializeComponent();
+            InitializeComponent();           
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        { }
+        {}
         public void button1_Click(object sender, EventArgs e)
-        {      //Обработка ошибок :3 А то есть тут злыдни, которые всё ломают     
-            try
-            {
-                //---------- Дуйствие по сложению чисел ----------
-                textBox3.Text = (Convert.ToDouble(textBox1.Text) + Convert.ToDouble(textBox2.Text)).ToString(); 
-            }
-            catch
-            {
-                MessageBox.Show("Эй, ГУМАНИТАРИЙ хватет ламать меня. Бука", "Code 1.0", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+        {            
+            textBox3.Text = Math.math_p(textBox1.Text, textBox2.Text);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //Обработка ошибок :3 А то есть тут злыдни, которые всё ломают 
-            try
-            {
-                //---------- Дуйствие по вычитанию чисел ----------
-                textBox3.Text = (Convert.ToDouble(textBox1.Text) - Convert.ToDouble(textBox2.Text)).ToString();
-            }
-            catch
-            {
-                MessageBox.Show("Эй, ГУМАНИТАРИЙ хватет ламать меня. Бука", "Code 1.0", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            textBox3.Text = Math.math_m(textBox1.Text, textBox2.Text);
         }
 
         public void button3_Click(object sender, EventArgs e)
         {
-            //Обработка ошибок :3 А то есть тут злыдни, которые всё ломают 
-            try
-            {
-                //---------- Дуйствие по делению чисел ----------
-                textBox3.Text = (Convert.ToDouble(textBox1.Text) / Convert.ToDouble(textBox2.Text)).ToString();
-            }
-            catch
-            {
-                MessageBox.Show("Эй, ГУМАНИТАРИЙ хварит ламать меня. Бука", "Code 1.0", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            textBox3.Text = Math.math_d(textBox1.Text, textBox2.Text);
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            //Обработка ошибок :3 А то есть тут злыдни, которые всё ломают 
-            try
-            {
-                //---------- Дуйствие по умножению чисел ----------
-                textBox3.Text = (Convert.ToDouble(textBox1.Text) * Convert.ToDouble(textBox2.Text)).ToString();
-            }
-            catch
-            {
-                MessageBox.Show("Эй, ГУМАНИТАРИЙ хватет ламать меня. Бука", "Code 1.0", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            textBox3.Text = Math.math_u(textBox1.Text, textBox2.Text);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
-        { }
+        {}
 
         private void button5_Click(object sender, EventArgs e)
         {
@@ -78,7 +44,7 @@ namespace kallulater_shond
             {
                 //---------- Нахождение степени числа ----------
                 // Этот кусок кода не оптимизирован, трубуется доработка. 
-                string text = "";
+                /*string text = "";
 
                 var num1 = Convert.ToDouble(textBox1.Text);
                 var num2 = Convert.ToDouble(textBox2.Text);
@@ -90,7 +56,7 @@ namespace kallulater_shond
 
                 label4.Text = "^";
                 label4.Visible = true;
-
+                 */
             }
             catch
             {
