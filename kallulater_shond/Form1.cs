@@ -13,6 +13,14 @@ namespace kallulater_shond
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink; // Запрет на изменения размера формы
             MaximizeBox = false;
 
+            ToolStripMenuItem aboutItem = new ToolStripMenuItem("О программе");
+            aboutItem.Click += aboutItem_Click;
+            menuStrip1.Items.Add(aboutItem);
+
+            void aboutItem_Click(object sender, EventArgs e)
+            {
+                MessageBox.Show("Разработчик: Sithond\n\nDiscord: Вечно \"Злой VINISHKO ТЯН\"#8161\nVK: vk.com\\sithond", "О программе", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
