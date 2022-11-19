@@ -17,17 +17,7 @@ namespace kallulater_shond
         {
             try
             {
-                string text = "";
-                var num1 = Convert.ToDouble(textBox1.Text);
-                var num2 = Convert.ToDouble(textBox2.Text);
-                var answer = num1 + num2;
-
-                text = Convert.ToString(answer);
-
-                textBox3.Text = text;
-
-                label4.Text = "+";
-                label4.Visible = true;
+                textBox3.Text = (Convert.ToDouble(textBox1.Text) + Convert.ToDouble(textBox2.Text)).ToString();
             }
             catch
             {
@@ -39,19 +29,7 @@ namespace kallulater_shond
         {
             try
             {
-                string text = "";
-
-                var num1 = Convert.ToDouble(textBox1.Text);
-                var num2 = Convert.ToDouble(textBox2.Text);
-
-                var answer = num1 - num2;
-
-                text = Convert.ToString(answer);
-
-                textBox3.Text = text;
-
-                label4.Text = "-";
-                label4.Visible = true;
+                textBox3.Text = (Convert.ToDouble(textBox1.Text) - Convert.ToDouble(textBox2.Text)).ToString();
             }
             catch
             {
@@ -63,19 +41,7 @@ namespace kallulater_shond
         {
             try
             {
-                string text = "";
-                double answer;
-                var num1 = Convert.ToDouble(textBox1.Text);
-                var num2 = Convert.ToDouble(textBox2.Text);
-
-                answer = num1 / num2;
-
-                text = Convert.ToString(answer);
-
-                textBox3.Text = text;
-
-                label4.Text = "/";
-                label4.Visible = true;
+                textBox3.Text = (Convert.ToDouble(textBox1.Text) / Convert.ToDouble(textBox2.Text)).ToString();
             }
             catch
             {
@@ -87,16 +53,7 @@ namespace kallulater_shond
         {
             try
             {
-                string text = "";
-
-                var num1 = Convert.ToDouble(textBox1.Text);
-                var num2 = Convert.ToDouble(textBox2.Text);
-                var answer = num1 * num2;
-                text = Convert.ToString(answer);
-                textBox3.Text = text;
-
-                label4.Text = "*";
-                label4.Visible = true;
+                textBox3.Text = (Convert.ToDouble(textBox1.Text) * Convert.ToDouble(textBox2.Text)).ToString();
             }
             catch
             {
