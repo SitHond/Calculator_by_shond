@@ -30,10 +30,7 @@ namespace kallulater_shond
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {}
-        private void button6_Click(object sender, EventArgs e)
-        {
-            textBox3.Text = Math.math_percent(textBox1.Text, textBox2.Text);
-        }
+        private void button6_Click(object sender, EventArgs e) => textBox3.Text = Math.math_percent(textBox1.Text, textBox2.Text);
         private void textBox3_TextChanged(object sender, EventArgs e)
         {}
         private void label5_Click(object sender, EventArgs e)
