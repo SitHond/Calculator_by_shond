@@ -23,19 +23,53 @@ namespace kallulater_shond
         }
         private void Form1_Load(object sender, EventArgs e)
         {}
-        public void button1_Click(object sender, EventArgs e) => textBox3.Text = Math.math_plas(textBox1.Text, textBox2.Text);
-        private void button2_Click(object sender, EventArgs e) => textBox3.Text = Math.math_minus(textBox1.Text, textBox2.Text);
-        public void button3_Click(object sender, EventArgs e) => textBox3.Text = Math.math_division(textBox1.Text, textBox2.Text);
-        private void button4_Click(object sender, EventArgs e) => textBox3.Text = Math.math_multiply(textBox1.Text, textBox2.Text);
+        public void button1_Click(object sender, EventArgs e)
+        {
+            textBox3.Text = Math.math_plas(textBox1.Text, textBox2.Text);
+            pictureBox1.ImageLocation = Math.plusImg();
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage; // Растянуть изображение
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox3.Text = Math.math_minus(textBox1.Text, textBox2.Text);
+            pictureBox1.ImageLocation = Math.minusImg();
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage; // Растянуть изображение
+        }
+        public void button3_Click(object sender, EventArgs e)
+        {
+            textBox3.Text = Math.math_division(textBox1.Text, textBox2.Text);
+            pictureBox1.ImageLocation = Math.divisionImg();
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage; // Растянуть изображение
+        }
+        private void button4_Click(object sender, EventArgs e)
+        {
+            textBox3.Text = Math.math_multiply(textBox1.Text, textBox2.Text);
+            pictureBox1.ImageLocation = Math.multiplyImg();
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage; // Растянуть изображение
+        } 
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {}
-        private void button6_Click(object sender, EventArgs e) => textBox3.Text = Math.math_percent(textBox1.Text, textBox2.Text);
+        private void button6_Click(object sender, EventArgs e)
+        {
+            textBox3.Text = Math.math_percent(textBox1.Text, textBox2.Text);
+            pictureBox1.ImageLocation = Math.discountImg();
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage; // Растянуть изображение
+        }
         private void textBox3_TextChanged(object sender, EventArgs e)
         {}
         private void label5_Click(object sender, EventArgs e)
         {}
         private void label1_Click(object sender, EventArgs e)
+        {}
+
+        private void label2_Click(object sender, EventArgs e)
+        {}
+
+        private void label3_Click(object sender, EventArgs e)
+        {}
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {}
     }
 }
