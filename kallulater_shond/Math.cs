@@ -65,30 +65,10 @@ namespace kallulater_shond
             }
             return string.Empty;
         }
-        public static string plusImg()
-        {
-            string imgPlus;
-            return imgPlus = "https://sithond.ru/img/plus.png";
-        }
-        public static string minusImg()
-        {
-            string imgMinus;
-            return imgMinus = "https://sithond.ru/img/minus.png";
-        }
-        public static string multiplyImg()
-        {
-            string imgMultiply;
-            return imgMultiply = "https://sithond.ru/img/circle.png";
-        }
-        public static string divisionImg()
-        {
-            string imgDivision;
-            return imgDivision = "https://sithond.ru/img/divide.png";
-        }
-        public static string discountImg()
-        {
-            string imgDiscount;
-            return imgDiscount = "https://sithond.ru/img/discount.png";
-        }
+        public static string plusImg() => "https://sithond.ru/img/plus.png";
+        public static string minusImg() => "https://sithond.ru/img/minus.png";
+        public static string multiplyImg() => "https://sithond.ru/img/circle.png";
+        public static string divisionImg() => "https://sithond.ru/img/divide.png";
+        public static string discountImg() => "https://sithond.ru/img/discount.png";           
     }
 }
