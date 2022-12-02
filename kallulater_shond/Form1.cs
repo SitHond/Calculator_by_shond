@@ -69,7 +69,6 @@ namespace kallulater_shond
 
         private void button7_Click(object sender, EventArgs e)
         {
-            colorDialog1= new ColorDialog();
             colorDialog1.ShowDialog();
             BackColor = colorDialog1.Color;
         }
