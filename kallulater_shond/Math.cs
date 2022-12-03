@@ -4,7 +4,8 @@ using System.Windows.Forms;
 namespace kallulater_shond
 {
     public static class Math
-    { 
+    {
+        // ------- Математическое выдажение "+" -------
         public static string math_plas(string r, string t)
         {
             try
@@ -17,6 +18,7 @@ namespace kallulater_shond
             }            
             return string.Empty;
         }
+        // ------- Математическое выдажение "-" -------
         public static string math_minus(string r, string t)
         {
             try
@@ -29,6 +31,7 @@ namespace kallulater_shond
             }
             return string.Empty;
         }
+        // ------- Математическое выдажение "/" -------
         public static string math_division(string r, string t)
         {
             try
@@ -41,6 +44,7 @@ namespace kallulater_shond
             }
             return string.Empty;
         }
+        // ------- Математическое выдажение "*" -------
         public static string math_multiply(string r, string t)
         {
             try
@@ -53,6 +57,7 @@ namespace kallulater_shond
             }
             return string.Empty;
         }
+        // ------- Математическое выдажение "%" -------
         public static string math_percent(string r, string t)
         {
             try
@@ -65,6 +70,7 @@ namespace kallulater_shond
             }
             return string.Empty;
         }
+        // ------- Подгружает картинку с сервера -------
         public static string plusImg() => "https://sithond.ru/img/plus.png";
         public static string minusImg() => "https://sithond.ru/img/minus.png";
         public static string multiplyImg() => "https://sithond.ru/img/circle.png";

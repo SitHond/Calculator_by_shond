@@ -66,7 +66,6 @@ namespace kallulater_shond
                 MessageBox.Show("Вы не администратор","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
-
         private void button7_Click(object sender, EventArgs e)
         {
             colorDialog1.ShowDialog();
