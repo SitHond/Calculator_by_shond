@@ -293,7 +293,6 @@ namespace kallulater_shond
             this.MinimumSize = new System.Drawing.Size(661, 300);
             this.Name = "form1";
             this.Text = "Калькулятор";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
