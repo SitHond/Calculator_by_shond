@@ -5,7 +5,7 @@ namespace kallulater_shond
 {
     public static class Math
     {
-        // ------- Математическое выдажение "+" -------
+        // ------- Математическое выдажение "+" --------
         public static string math_plas(string r, string t)
         {
             try
